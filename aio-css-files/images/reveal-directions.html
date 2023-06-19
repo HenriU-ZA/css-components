@@ -1,0 +1,57 @@
+<style>
+    img {
+  --s: 200px; /* the size need to match the intrinsic image size for "center" and "random" */
+  
+  width: var(--s);
+  height: var(--s); /* better than aspect-ratio in case the image has a height attribute */
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: .5s;
+}
+img.center {
+  object-fit: none; /* this is doing the magic, not a common value but it allows to keep the intrinsice size of the replaced content */
+  padding: calc(var(--s)/2);
+  background: #88C425;
+}
+img.vertical {
+  object-fit: cover; /* we can also use "none" here, it will give the same result */
+  padding-block: calc(var(--s)/2);
+  background: #F07818;
+}
+img.horizontal {
+  object-fit: cover;
+  padding-inline: calc(var(--s)/2);
+  background: #AB3E5B;
+}
+/* you can use any combination of padding. 
+  make sure the padding will cover all the area
+  also make sure to correctly set object-position and object-fit to create the illusion of a fixed image
+  I may write a small article for it
+*/
+img.random {
+  object-position: top left;
+  object-fit: none;
+  padding: 0 var(--s) var(--s) 0;
+  background: #0E2430;
+}
+
+img:hover {
+  padding: 0;
+}
+
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  place-content: center;
+  gap: 30px;
+  background: #C6E5D9;
+}
+</style>
+<h1><a href="../../index.php">HOME</a></h1>
+<img src="https://picsum.photos/id/75/200/200" class="center" alt="grap">
+<img src="https://picsum.photos/id/102/200/200" class="vertical" alt="raspberry">
+<img src="https://picsum.photos/id/248/200/200" class="horizontal" alt="cactus">
+<img src="https://picsum.photos/id/1080/200/200" class="random" alt="strawberry">

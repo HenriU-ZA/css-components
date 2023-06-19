@@ -1,0 +1,51 @@
+<style>
+    img {
+  --s: 200px; /* the image size */
+  
+  width: var(--s);
+  height: var(--s); /* better than aspect-ratio in case the image has a height attribute */
+  box-sizing: border-box;
+  object-fit: cover;
+  background: var(--i) 50%/cover #000;
+  background-blend-mode: luminosity; /* we take the luminosity of the image and we use the hue/staturation of back color so we end having hsl(0 0% L)*/
+  transition: .5s;
+  cursor: pointer;
+}
+img.left {
+  object-position: right;
+  padding-left: var(--s);
+}
+img.right {
+  object-position: left;
+  padding-right: var(--s);
+}
+img.top {
+  object-position: bottom;
+  padding-top: var(--s);
+}
+img.bottom {
+  object-position: top;
+  padding-bottom: var(--s);
+}
+
+img:hover {
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  place-content: center;
+  gap: 30px;
+  background: #C6A49A;
+}
+</style>
+<h1><a href="../../index.php">HOME</a></h1>
+
+<!-- I have to duplicate the url, that's the only drawback -->
+<img src="https://picsum.photos/id/56/250/250" class="left" style="--i:url(https://picsum.photos/id/56/250/250)" alt="a jellyfish">
+<img src="https://picsum.photos/id/292/250/250" class="right" style="--i:url(https://picsum.photos/id/292/250/250)" alt="a lioness">
+<img src="https://picsum.photos/id/287/250/250" class="top" style="--i:url(https://picsum.photos/id/287/250/250)" alt="a bear">
+<img src="https://picsum.photos/id/165/250/250" class="bottom" style="--i:url(https://picsum.photos/id/165/250/250)" alt="a wolf">
