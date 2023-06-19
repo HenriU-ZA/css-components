@@ -58,6 +58,15 @@
             <p>Found this on <a href="https://www.youtube.com/@KevinPowell">Kevin Powel's Youtube Channel</a>
         </article>
     </section>
+    <h2>Spinners</h2>
+    <section>
+        <article>
+            <h3>Spinner - Animated Loading</h3>
+            <a href="aio-css-files/spinner/animated-loading-spinner.html">Preview</a>
+            <p>In this video we will walk-through how to create an animated loading spinner using pure CSS.</p>
+            <p>Found this on <a href="https://www.youtube.com/watch?v=ssncc31DMG4">Animated Loading Spinner Tutorial</a>
+        </article>
+    </section>
 </body>
 
 </html>
