@@ -3,8 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css-reset.css">
-    <link rel="stylesheet" href="mainstyles.css">
+    <?php
+    include "css-includes.php";
+    ?>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Components Home</title>
 </head>
@@ -15,11 +17,14 @@
     </header>
     <h2>Buttons</h2>
     <section>
-    <article>
+        <article>
             <h3>3D Flip Button</h3>
-            <a href="aio-css-files/buttons/3d-flip-btn.html">Preview</a>
             <p>In this video we will walk-through how to create a 3D button that flips to another side when hovered.</p>
-            <p>Found this on <a href="https://www.youtube.com/watch?v=_isJ_SpN7T0">3D Flip Button Tutorial</a>
+            
+                <?php
+                include "aio-css-files/buttons/3d-flip-btn.html"
+                ?>
+            
         </article>
         <article>
             <h3>Button - Awesome</h3>
@@ -30,7 +35,7 @@
     </section>
     <h2>Image Transitions</h2>
     <section>
-    <article>
+        <article>
             <h3>B&W to Color</h3>
             <a href="aio-css-files/images/reveal-color.html">Preview</a>
             <p>Images on the page change from black and white to color on hover.</p>
