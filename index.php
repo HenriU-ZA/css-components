@@ -15,6 +15,26 @@
     <header>
         <h1>CSS Components Home Page</h1>
     </header>
+    <h2>BBorders</h2>
+    <section>
+    <article>
+            <h3>Moving Border</h3>
+            <a href="aio-css-files/borders/moving-border.html">Preview</a>
+            <p>This adds a nice effect to any element on hover. More options can probably be used.</p>
+            <a href="https://codepen.io/RitikaAgrawal08/pen/qBYmYdN">By Ritika Agrawal</a>
+
+            
+        </article>
+        <article>
+            <h3>Rainbow Border</h3>
+            <a href="aio-css-files/borders/rainbow-border.html">Preview</a>
+            <p>This adds a nice effect to any element on hover. More options can probably be used.</p>
+            <a href="https://codepen.io/bramus/pen/rNWByYz">By Bramus</a>
+
+            
+        </article>
+
+    </section>
     <h2>Buttons</h2>
     <section>
         <article>
